@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name = 'pyflakes-ext',
-	version = '1.0.0',
+	version = '1.0.1',
 	author = 'Vita Smid',
 	author_email = 'me@ze.phyr.us',
 	packages = ['pyflakes_ext',],
@@ -10,7 +10,7 @@ setup(
 	license = 'MIT',
 	description = 'A few extra additions to pyflakes.',
 	install_requires = [
-		'pyflakes',
+		'pyflakes>=1.2.3',
 	],
 	entry_points = {
 		'console_scripts': [
