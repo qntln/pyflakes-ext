@@ -7,7 +7,7 @@ setup(
 	author_email = 'me@ze.phyr.us',
 	packages = ['pyflakes_ext',],
 	url = 'https://github.com/ze-phyr-us/pyflakes-ext',
-	license = 'LICENSE',
+	license = 'MIT',
 	description = 'A few extra additions to pyflakes.',
 	install_requires = [
 		'pyflakes',
