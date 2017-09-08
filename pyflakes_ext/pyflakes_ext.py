@@ -25,10 +25,12 @@ def getFileLines(file: str) -> 'List[str]':
 
 
 def main() -> int:
-	p = subprocess.Popen(['pyflakes'] + sys.argv[1:], stdout = subprocess.PIPE)
-	stdout, _ = p.communicate() # type: Tuple[bytes, bytes]
+	p = subprocess.Popen(['pyflakes'] + sys.argv[1:], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+	stdout, stderr = p.communicate() # type: Tuple[bytes, bytes]
 
-	failed = False
+	failed = stderr.decode('utf-8') != ''
+	print(stderr.decode('utf-8'), file = sys.stderr)
+
 	for warning in stdout.decode('utf-8').strip().split('\n'):
 		if warning:
 			file, line, _ = warning.split(':', 3) # dir/file.py:5: 'sys' imported but unused
