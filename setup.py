@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name = 'pyflakes-ext',
-	version = '1.0.1',
+	version = '1.0.2',
 	author = 'Vita Smid',
 	author_email = 'me@ze.phyr.us',
 	packages = ['pyflakes_ext',],
