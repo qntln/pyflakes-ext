@@ -33,7 +33,7 @@ def main() -> int:
 
 	for warning in stdout.decode('utf-8').strip().split('\n'):
 		if warning:
-			file, line, _ = warning.split(':', 3) # dir/file.py:5: 'sys' imported but unused
+			file, line, _ = warning.split(':', 2) # dir/file.py:5: 'sys' imported but unused
 			line = getFileLines(file)[int(line) - 1].strip()
 			if IGNORE_COMMENT not in line.lower() and not any(pat.search(warning) for pat in AUTOIGNORE):
 				failed = True
