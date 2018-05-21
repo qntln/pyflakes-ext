@@ -10,7 +10,7 @@ setup(
 	license = 'MIT',
 	description = 'A few extra additions to pyflakes.',
 	install_requires = [
-		'pyflakes>=1.2.3',
+		'pyflakes>=1.2.3,<2.0.0',
 	],
 	entry_points = {
 		'console_scripts': [
