@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name = 'pyflakes-ext',
-	version = '1.0.2',
+	version = '1.0.4',
 	author = 'Quantlane',
 	author_email = 'code@quantlane.com',
 	packages = ['pyflakes_ext',],
