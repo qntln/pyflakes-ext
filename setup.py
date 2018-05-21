@@ -3,10 +3,10 @@ from setuptools import setup
 setup(
 	name = 'pyflakes-ext',
 	version = '1.0.2',
-	author = 'Vita Smid',
-	author_email = 'me@ze.phyr.us',
+	author = 'Quantlane',
+	author_email = 'code@quantlane.com',
 	packages = ['pyflakes_ext',],
-	url = 'https://github.com/ze-phyr-us/pyflakes-ext',
+	url = 'https://github.com/qntln/pyflakes-ext',
 	license = 'MIT',
 	description = 'A few extra additions to pyflakes.',
 	install_requires = [
